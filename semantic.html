@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Semantic Elements</title>
+        <style>
+            #header{
+                background-color: lightblue;
+                padding:16px;
+
+            }
+            #navbar{
+                background-color: lightcoral;
+                padding: 8px;
+            }
+            #main{
+                background-color: lightgray;
+                padding: 24px;
+            }
+            #section{
+                background-color: lightgreen;
+                padding: 16px;
+            }
+            .article{
+                background-color:lightseagreen;
+                padding: 16px;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+            #footer{
+                background-color: lightskyblue;
+                padding:24px;
+            }
+        </style>
+    </head>
+    <body style="margin:0">
+        <header> <!--equivalent to topbar and then nav bar as side bar-->
+            <nav id="navbar">
+                <span>Menu 1</span>
+                <span>Menu 2</span>
+                <span>Menu 3</span>
+            </nav>
+        </header>
+        <main id="main"> <!--main element not wrap by any other element-->
+            <section id="section"></section> <!--represnet content of major subjection-->
+                <article class="article"> <!--if website include any blog posts then wrap it-->
+                    <header>
+                        <h3>Article Title One</h3>
+                        <a href="/">Author One</a>
+                    </header>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ipsa labore ex cupiditate officia rerum sequi eveniet, quo quidem aspernatur distinctio dicta laudantium asperiores, nulla non, impedit voluptates! Id, esse!</p>
+                </article> 
+                <article class="article"> <!--if website include any blog posts then wrap it-->
+                    <header>
+                        <h3>Article Title Two</h3>
+                        <a href="/">Author Second</a>
+                    </header>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ipsa labore ex cupiditate officia rerum sequi eveniet, quo quidem aspernatur distinctio dicta laudantium asperiores, nulla non, impedit voluptates! Id, esse!</p>
+                </article> 
+            </section>
+        </main>
+        <footer id="footer">
+            <p>Copyright 2019</p>
+        </footer>
+    </body>
+</html>
